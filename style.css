@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face { 
+    font-family: 'myFont';
+    src: url('fonts/шрифт 1_0.otf') format('truetype');
+}
+
+@font-face { 
+  font-family: 'myFont2';
+  src: url('fonts/LumiosTypewriter-Old.ttf') format('truetype');
+}
+
+body{
+    background-color:black;
+    color: white;
+    font-family: 'myFont2';
+    margin: 0 400px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'myFont2';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+}
+
+section p {
+    text-align: left;
+}
+
+
+#link {
+    color: white;
+    text-decoration: none;
+    display: inline-block; /* строчно-блочным*/
+    transition: transform 0.3s ease; /* плавное увеличение */
+}
+
+#link:hover {
+    color: red;
+    text-decoration: none; /* убрать подчеркивание */
+    transform: scale(1.2); 
+}
+
+.image-container {
+    text-align: center; 
+}
+
+main {
+    margin: 0 400px; 
+    font-family: 'myFont2';
+    color: white;
+}
+
+.highlight {
+    color: red;
+    font-size: 40px;
+}
+.highlight1 {
+    color: red;
+    font-size: 10px;
+    font-family: 'myFont2';
+}
+
+.highlight-link {
+    color: yellow;
+    text-decoration: none;
+}
+
+.highlight-link:hover {
+    text-decoration: underline; 
+}
+
+.content {
+    float: left;
+    width: calc(100% - 220px); /* ширина с учётом aside и отступа */
+    box-sizing: border-box;
+}
+
+.content article {
+    overflow: hidden; /* чтобы ограничить поток внутри article*/
+    margin-bottom: 15px; /* нижний отступ между статьями.*/
+}
+
+.actor-photo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.actor-info h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.actor-info p {
+  font-size: 14px;
+  color:rgb(146, 146, 146);
+}
+
+.aside-photo {
+  float: right;
+  width: 200px;
+  box-sizing: border-box;  
+  margin-left: 20px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
