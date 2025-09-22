@@ -40,14 +40,14 @@ section p {
 }
 
 
-#link {
+.link {
     color: white;
     text-decoration: none;
     display: inline-block; /* строчно-блочным*/
     transition: transform 0.3s ease; /* плавное увеличение */
 }
 
-#link:hover {
+.link:hover {
     color: red;
     text-decoration: none; /* убрать подчеркивание */
     transform: scale(1.2); 
@@ -80,6 +80,10 @@ main {
 
 .highlight-link:hover {
     text-decoration: underline; 
+}
+
+#highlight3{
+    color: yellow;
 }
 
 .content {
